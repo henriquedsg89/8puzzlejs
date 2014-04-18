@@ -1,0 +1,43 @@
+canvas {
+    border: 1px solid rgb(128, 97, 0);
+    padding: 10px;
+    background: rgb(255, 253, 195);
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+input[type="text"] {
+    width: 49px;
+    height: 49px;
+    margin: 0 6px 6px 6px;
+    font-size: 25px;
+    text-align: center;
+    color: red;
+}
+input[type="text"]:focus {
+    box-shadow: 0px 0px 10px red;
+    border: 1px solid red;
+}
+.wololo {
+    display: inline-block;
+    top: 0;
+    left: 220px;
+    position: fixed;
+    margin-left: 10px;
+}
+.canvas-dos-oito {
+    display: inline-block;
+}
+input[type="button"] {
+    background: green;
+    border: 1px solid rgb(15, 70, 15);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="button"]:hover {
+    background: rgb(48, 102, 48);
+    border: 1px solid rgb(16, 65, 16);
+}
