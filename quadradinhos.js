@@ -40,6 +40,7 @@ function ordenar() {
             console.log(filaEstados.length + " break");
             return;
         }
+
         estadoFinal = filaEstados.shift();
     }
     console.log("Done");
