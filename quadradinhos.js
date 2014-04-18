@@ -16,20 +16,14 @@ function ordenar() {
         [$("#2_0").val().toNum(), $("#2_1").val().toNum(), $("#2_2").val().toNum()]
     ];
 
-    var filaImgs = [];
-    filaImgs.push(img.clone());
+    estadoFinal = new Estado(null, img);
+
     var filaEstados = [];
-    filaEstados.push(new Estado(filaImgs.clone()));
 
-    estadoFinal = filaEstados.shift();
-
-    while (!ehFinal(estadoFinal.filaImgs.last())) {
-        populaOpcoes(estadoFinal.filaImgs.last().clone()).map(function(novaImg) {
+    while (!ehFinal(estadoFinal.img.clone())) {
+        populaOpcoes(estadoFinal.img.clone()).map(function(novaImg) {
             if (novaImg != null) {
-                var novasImgs = estadoFinal.filaImgs.clone();
-                novasImgs.push(novaImg);
-                var newEstado = new Estado(novasImgs);
-                filaEstados.push(newEstado);
+                filaEstados.push(new Estado(estadoFinal, novaImg.clone()));
             }
         });
 

@@ -2,8 +2,9 @@
  * Created by henrique on 18/04/14.
  */
 
-function Estado(filaImgs) {
-    this.filaImgs = filaImgs;
+function Estado(deOndeVim, img) {
+    this.deOndeVim = deOndeVim
+    this.img = img;
 }
 
 

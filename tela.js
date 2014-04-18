@@ -2,11 +2,11 @@ var boxSendoDesenhada;
 var boxesParaDesenhar = [];
 
 function iniciaBoxes() {
-    var filaImgs = estadoFinal.filaImgs;
     var img;
-    while (filaImgs[0] != null) {
-        img = filaImgs.shift();
+    while (estadoFinal != null) {
+        img = estadoFinal.img;
         var boxesParaImg = [];
+
         for (var i = 0; i < 3; i++) {
             var boxesArray = [];
 
@@ -17,7 +17,10 @@ function iniciaBoxes() {
             boxesParaImg.push(boxesArray);
         }
         boxesParaDesenhar.push(boxesParaImg);
+
+        estadoFinal = estadoFinal.deOndeVim;
     }
+    boxesParaDesenhar.reverse();
 }
 
 function desenha() {
