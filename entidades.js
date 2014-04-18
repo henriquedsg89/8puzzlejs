@@ -2,9 +2,10 @@
  * Created by henrique on 18/04/14.
  */
 
-function Estado(deOndeVim, img) {
+function Estado(deOndeVim, img, manhatan) {
     this.deOndeVim = deOndeVim
     this.img = img;
+    this.manhatan = manhatan;
 }
 
 

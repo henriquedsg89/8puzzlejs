@@ -3,7 +3,8 @@
  */
 
 function ehFinal(img) {
-    return (ehFinal1(img) || ehFinal2(img) || ehFinal3(img) || ehFinal4(img));
+//    return (ehFinal1(img) || ehFinal2(img) || ehFinal3(img) || ehFinal4(img));
+    return ehFinal1(img);
 }
 function ehFinal1(img) {
     var valor = 1;
@@ -19,49 +20,49 @@ function ehFinal1(img) {
     }
     return true;
 }
-function ehFinal2(img) {
-    var valor = 1;
-    for (var i = 0; i < 3; i++) {
-        for (var j = 0; j < 3; j++) {
-            if (img[j][i] != 0) {
-                if (img[j][i] != valor) {
-                    return false;
-                }
-                valor++;
-            }
-        }
-    }
-    return true;
-}
-function ehFinal3(img) {
-    var valor = 1;
-    for (var i = 2; i >= 0; i--) {
-        for (var j = 2; j >= 0; j--) {
-            if (img[i][j] != 0) {
-                if (img[i][j] != valor) {
-                    return false;
-                }
-                valor++;
-            }
-        }
-    }
-    return true;
-}
-
-function ehFinal4(img) {
-    var valor = 1;
-    for (var i = 2; i >= 0; i--) {
-        for (var j = 2; j >= 0; j--) {
-            if (img[j][i] != 0) {
-                if (img[j][i] != valor) {
-                    return false;
-                }
-                valor++;
-            }
-        }
-    }
-    return true;
-}
+//function ehFinal2(img) {
+//    var valor = 1;
+//    for (var i = 0; i < 3; i++) {
+//        for (var j = 0; j < 3; j++) {
+//            if (img[j][i] != 0) {
+//                if (img[j][i] != valor) {
+//                    return false;
+//                }
+//                valor++;
+//            }
+//        }
+//    }
+//    return true;
+//}
+//function ehFinal3(img) {
+//    var valor = 1;
+//    for (var i = 2; i >= 0; i--) {
+//        for (var j = 2; j >= 0; j--) {
+//            if (img[i][j] != 0) {
+//                if (img[i][j] != valor) {
+//                    return false;
+//                }
+//                valor++;
+//            }
+//        }
+//    }
+//    return true;
+//}
+//
+//function ehFinal4(img) {
+//    var valor = 1;
+//    for (var i = 2; i >= 0; i--) {
+//        for (var j = 2; j >= 0; j--) {
+//            if (img[j][i] != 0) {
+//                if (img[j][i] != valor) {
+//                    return false;
+//                }
+//                valor++;
+//            }
+//        }
+//    }
+//    return true;
+//}
 
 function findPosicaoDoZero(img) {
     for (var i = 0; i < 3; i++) {
@@ -84,25 +85,39 @@ function findPosicaoDoZeroParaBoxes(boxes) {
     return null;
 }
 
-function verificaRepetidos(est) {
+function ehRepetido(est) {
     var anterior = est.deOndeVim;
     while (anterior != null) {
-        if (equals(anterior.img, est.img)) {
+        if (equals(anterior.img.clone(), est.img.clone())) {
             return true;
         }
         anterior = anterior.deOndeVim;
     }
     return false;
 }
-function equals(boxArray, boxArray2) {
+function equals(img1, img2) {
     for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++) {
-            if (boxArray[i][j].value != boxArray2[i][j]) {
+            if (img1[i][j] != img2[i][j]) {
                 return false;
             }
         }
     }
     return true;
+}
+
+function calculaManhattan(img) {
+    var diff = 0;
+    var valor = 1;
+    for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 3; j++) {
+            if (img[i][j] != 0) {
+                diff += Math.abs(img[i][j] - valor);
+                valor++;
+            }
+        }
+    }
+    return diff;
 }
 
 String.prototype.toNum = function () {

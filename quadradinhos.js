@@ -16,14 +16,17 @@ function ordenar() {
         [$("#2_0").val().toNum(), $("#2_1").val().toNum(), $("#2_2").val().toNum()]
     ];
 
-    estadoFinal = new Estado(null, img);
+    estadoFinal = new Estado(null, img, calculaManhattan(img));
 
     var filaEstados = [];
 
     while (!ehFinal(estadoFinal.img.clone())) {
         populaOpcoes(estadoFinal.img.clone()).map(function(novaImg) {
             if (novaImg != null) {
-                filaEstados.push(new Estado(estadoFinal, novaImg.clone()));
+                var novoEstado = new Estado(estadoFinal, novaImg.clone(), calculaManhattan(novaImg));
+                if (!ehRepetido(novoEstado)) {
+                    filaEstados.push(novoEstado);
+                }
             }
         });
 
@@ -35,6 +38,7 @@ function ordenar() {
             return;
         }
 
+        filaEstados.sort(sortManhatan);
         estadoFinal = filaEstados.shift();
     }
     console.log("Done");
@@ -46,4 +50,8 @@ function ordenar() {
 
     iniciaBoxes();
     intervalId = setInterval(desenha, 50);
+}
+
+function sortManhatan(estA, estB) {
+    return estA.manhatan - estB.manhatan;
 }
