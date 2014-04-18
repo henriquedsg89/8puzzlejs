@@ -254,11 +254,9 @@ function ordenar() {
         achou = ehFinal(tabuleiro.img);
         nivelAtual = tabuleiro.nivel;
 
-        if (!achou) {
-            populaOpcoes(tabuleiro, nivelAtual).map(function(opt) {
-                fila.push(opt);
-            });
-        }
+        populaOpcoes(tabuleiro, nivelAtual).map(function(opt) {
+            fila.push(opt);
+        });
     }
 
 
