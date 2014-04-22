@@ -41,3 +41,6 @@ input[type="button"]:hover {
     background: rgb(48, 102, 48);
     border: 1px solid rgb(16, 65, 16);
 }
+input[type="button"]:disabled {
+    background: #999 !important;
+}

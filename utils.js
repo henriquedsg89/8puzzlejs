@@ -3,7 +3,6 @@
  */
 
 function ehFinal(img) {
-//    return (ehFinal1(img) || ehFinal2(img) || ehFinal3(img) || ehFinal4(img));
     return ehFinal1(img);
 }
 function ehFinal1(img) {
@@ -20,49 +19,6 @@ function ehFinal1(img) {
     }
     return true;
 }
-//function ehFinal2(img) {
-//    var valor = 1;
-//    for (var i = 0; i < 3; i++) {
-//        for (var j = 0; j < 3; j++) {
-//            if (img[j][i] != 0) {
-//                if (img[j][i] != valor) {
-//                    return false;
-//                }
-//                valor++;
-//            }
-//        }
-//    }
-//    return true;
-//}
-//function ehFinal3(img) {
-//    var valor = 1;
-//    for (var i = 2; i >= 0; i--) {
-//        for (var j = 2; j >= 0; j--) {
-//            if (img[i][j] != 0) {
-//                if (img[i][j] != valor) {
-//                    return false;
-//                }
-//                valor++;
-//            }
-//        }
-//    }
-//    return true;
-//}
-//
-//function ehFinal4(img) {
-//    var valor = 1;
-//    for (var i = 2; i >= 0; i--) {
-//        for (var j = 2; j >= 0; j--) {
-//            if (img[j][i] != 0) {
-//                if (img[j][i] != valor) {
-//                    return false;
-//                }
-//                valor++;
-//            }
-//        }
-//    }
-//    return true;
-//}
 
 function findPosicaoDoZero(img) {
     for (var i = 0; i < 3; i++) {
@@ -107,17 +63,61 @@ function equals(img1, img2) {
 }
 
 function calculaManhattan(img) {
-    var diff = 0;
-    var valor = 1;
+    var manhattan = 0;
+    var valor;
+
+    var arrayPosition;
+
     for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++) {
-            if (img[i][j] != 0) {
-                diff += Math.abs(img[i][j] - valor);
-                valor++;
+            valor = img[i][j];
+            if (valor != 0) {
+                valor -= 1;
+                manhattan += Math.abs((i - Math.floor(valor / 3)) + (j - valor % 3));
+
+                arrayPosition = 1+ j +(i*3);
+
+                var ii = Math.floor((valor-1) / 2);
+                var jj = (valor-1) % 3;
+                manhattan +=  (Math.abs(i-ii) + Math.abs(j-jj));
+//                  0 1 2
+//                  0 x x x
+//                  1 x x x
+//                  2 x x x
+//                            i   j
+//                1 - 3 = 2 = 0 & 0;
+//                2 - 3 = 1 = 0 & 1;
+//                4 - 3 = 3 = 1 & 0;
+//                5 - 3 = 1 = 1 & 2;
+//                6 - 3 = 4 = 2 & 0;
+//                7 - 3 = 3 = 2 & 1;
+//                8 - 3 = 2 = 2 & 2;
+
             }
         }
     }
-    return diff;
+    return manhattan;
+}
+
+function calcNumInversoes(img) {
+    var valoresEmString = "";
+    var numInversoes = 0;
+    for (var i = 0; i < 3; i++) {
+        for (var j = 0; j < 3; j++) {
+            valor = img[i][j]
+            if (valor != 0) {
+                valoresEmString += valor;
+            }
+        }
+    }
+    for (var i = 0; i < 8; i++) {
+        for (var i2 = i + 1; i2 < 8; i2++) {
+            if (parseInt(valoresEmString.charAt(i)) > valoresEmString.charAt(i2)) {
+                numInversoes++;
+            }
+        }
+    }
+    return numInversoes;
 }
 
 String.prototype.toNum = function () {

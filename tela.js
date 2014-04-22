@@ -1,10 +1,16 @@
 var boxSendoDesenhada;
 var boxesParaDesenhar = [];
 
+$(document).ready(function() {
+    var c = $("#canvas")[0];
+    ctx = c.getContext("2d");
+    ctx.font = "bold 20px arial";
+});
+
 function iniciaBoxes() {
     var img;
-    while (estadoFinal != null) {
-        img = estadoFinal.img;
+    while (estadoSendoLido != null) {
+        img = estadoSendoLido.img;
         var boxesParaImg = [];
 
         for (var i = 0; i < 3; i++) {
@@ -18,7 +24,7 @@ function iniciaBoxes() {
         }
         boxesParaDesenhar.push(boxesParaImg);
 
-        estadoFinal = estadoFinal.deOndeVim;
+        estadoSendoLido = estadoSendoLido.deOndeVim;
     }
     boxesParaDesenhar.reverse();
 }

@@ -2,10 +2,12 @@
  * Created by henrique on 18/04/14.
  */
 
-function Estado(deOndeVim, img, manhatan) {
+function Estado(deOndeVim, img, nivel, manhattan) {
     this.deOndeVim = deOndeVim
     this.img = img;
-    this.manhatan = manhatan;
+    this.nivel = nivel;
+    this.manhatan = manhattan;
+    this.custo = nivel + manhattan;
 }
 
 

@@ -14,27 +14,36 @@
 <div class="canvas-dos-oito">
     <canvas id="canvas" width="175px" height="175px"></canvas>
     <p style="width: 175px">Ordenar os quadradinhos em sequencia, de 0 ate 8</p>
+    <p id="ordenado" style="visibility: hidden;">Ondenado! Usou <strong id="niveis"></strong>
+        niveis, demorou <strong id="demorou"></strong> milissegundos e
+        gerou <strong id="numEstados"></strong> estados.</p>
 </div>
 <div class="wololo">
     <form method="post">
         <ul>
             <li>
-                <input id="0_0" type="text" value="8"/>
-                <input id="0_1" type="text" value="7"/>
-                <input id="0_2" type="text" value="6"/>
+                <input id="0_0" type="text" maxlength="1" value="2"/>
+                <input id="0_1" type="text" maxlength="1" value="0"/>
+                <input id="0_2" type="text" maxlength="1" value="7"/>
             </li>
             <li>
-                <input id="1_0" type="text" value="5"/>
-                <input id="1_1" type="text" value="4"/>
-                <input id="1_2" type="text" value="3"/>
+                <input id="1_0" type="text" maxlength="1" value="8"/>
+                <input id="1_1" type="text" maxlength="1" value="5"/>
+                <input id="1_2" type="text" maxlength="1" value="4"/>
             </li>
             <li>
-                <input id="2_0" type="text" value="2"/>
-                <input id="2_1" type="text" value="1"/>
-                <input id="2_2" type="text" value="0"/>
+                <input id="2_0" type="text" maxlength="1" value="3"/>
+                <input id="2_1" type="text" maxlength="1" value="6"/>
+                <input id="2_2" type="text" maxlength="1" value="1"/>
             </li>
         </ul>
-        <input id="ordenar_btn" type="button" value="Ordenar" onclick="ordenar();"/>
+        Selecione o algoritmo
+        <select id="algor">
+            <option value="0">Busca cega em aplitude</option>
+            <option value="1" disabled>Busca cega em profundidade</option>
+            <option value="2" selected>A* com Manhattan</option>
+        </select>
+        <input id="ordenar_btn" type="button" value="Ordenar" onclick="ordenar()"/>
     </form>
 </div>
 </body>
