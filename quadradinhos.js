@@ -41,11 +41,11 @@ function ordenar() {
     var filaEstados = [];
     var numEstadosGerados = 0;
 
-    while (!ehFinal(estadoSendoLido.img.clone())) {
-        populaOpcoes(estadoSendoLido.img.clone()).map(function(novaImg) {
+    while (!ehFinal(estadoSendoLido.img)) {
+        populaOpcoes(estadoSendoLido.img).map(function(novaImg) {
 
             if (novaImg != null) {
-                var novoEstado = new Estado(estadoSendoLido, novaImg.clone(), estadoSendoLido.nivel + 1,
+                var novoEstado = new Estado(estadoSendoLido, novaImg, estadoSendoLido.nivel + 1,
                     usarManhattan ? calculaManhattan(novaImg) : 0);
 
                 if (!ehRepetido(novoEstado)) {
@@ -76,7 +76,7 @@ function ordenar() {
     alert("Resolvido! A partir de agora sera exibido a sequencia de movimentos.");
 
     iniciaBoxes();
-    intervalId = setInterval(desenha, 50);
+    intervalId = setInterval(desenha, 10);
 }
 
 function sortManhatan(estA, estB) {

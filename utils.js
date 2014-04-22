@@ -71,28 +71,15 @@ function calculaManhattan(img) {
         for (var j = 0; j < 3; j++) {
             valor = img[i][j];
             if (valor != 0) {
-                ii = Math.floor((valor-1) / 2);
+                ii = Math.floor((valor-1) / 3);
                 jj = (valor-1) % 3;
                 man1 = Math.abs(i-ii) + Math.abs(j-jj);
 
-                ii = Math.floor(valor / 2);
+                ii = Math.floor(valor / 3);
                 jj = valor % 3;
                 man2 = Math.abs(i-ii) + Math.abs(j-jj);
 
                 manhattan += man1 < man2 ? man1 : man2;
-//                  0 1 2
-//                  0 x x x
-//                  1 x x x
-//                  2 x x x
-//                            i   j
-//                1 - 3 = 2 = 0 & 0;
-//                2 - 3 = 1 = 0 & 1;
-//                4 - 3 = 3 = 1 & 0;
-//                5 - 3 = 1 = 1 & 2;
-//                6 - 3 = 4 = 2 & 0;
-//                7 - 3 = 3 = 2 & 1;
-//                8 - 3 = 2 = 2 & 2;
-
             }
         }
     }

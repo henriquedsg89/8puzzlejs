@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="80e61321-d946-46ed-beb9-633c6cf59a9c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/quadradinhos.js" afterPath="$PROJECT_DIR$/quadradinhos.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils.js" afterPath="$PROJECT_DIR$/utils.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -71,7 +72,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="36" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="990">
+            <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.3333334" vertical-offset="18" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -80,7 +81,7 @@
       <file leaf-file-name="quadradinhos.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/quadradinhos.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.22929937" vertical-offset="0" max-vertical-offset="1620">
+            <state line="65" column="5" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.2834395" vertical-offset="992" max-vertical-offset="1620">
               <folding />
             </state>
           </provider>
@@ -89,16 +90,7 @@
       <file leaf-file-name="populador.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/populador.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="23" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1422">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tela.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tela.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="50" selection-start="943" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="2088">
+            <state line="73" column="0" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1422">
               <folding />
             </state>
           </provider>
@@ -107,7 +99,7 @@
       <file leaf-file-name="utils.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+            <state line="93" column="25" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0" vertical-offset="1494" max-vertical-offset="2286">
               <folding />
             </state>
           </provider>
@@ -141,11 +133,11 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/interface_controller.js" />
-        <option value="$PROJECT_DIR$/populador.js" />
         <option value="$PROJECT_DIR$/tela.js" />
         <option value="$PROJECT_DIR$/estilo_x.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/entidades.js" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/populador.js" />
         <option value="$PROJECT_DIR$/utils.js" />
         <option value="$PROJECT_DIR$/quadradinhos.js" />
       </list>
@@ -373,7 +365,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43206108" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.43053436" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -382,7 +374,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21254902" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21254902" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
@@ -405,14 +397,15 @@
     <MESSAGE value="Versao com Manhattan" />
     <MESSAGE value="Ajuste no manhattan, colocado opcao selecionavel para poder escolher o algoritmo" />
     <MESSAGE value="Adicionado alerta antes de mostrar a solucao." />
-    <option name="LAST_COMMIT_MESSAGE" value="Adicionado alerta antes de mostrar a solucao." />
+    <MESSAGE value="OKk" />
+    <option name="LAST_COMMIT_MESSAGE" value="OKk" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="65" />
+      <option name="time" value="66" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -432,9 +425,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1926">
-          <folding />
-        </state>
+        <state line="13" column="46" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1926" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
@@ -467,9 +458,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="46" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1926">
-          <folding />
-        </state>
+        <state line="13" column="46" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="231" max-vertical-offset="1926" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
@@ -542,9 +531,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -568,9 +555,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -594,9 +579,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -620,9 +603,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -646,9 +627,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828">
-          <folding />
-        </state>
+        <state line="8" column="5" selection-start="0" selection-end="862" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="828" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -667,9 +646,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180">
-          <folding />
-        </state>
+        <state line="4" column="13" selection-start="93" selection-end="93" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="180" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -705,11 +682,6 @@
         <state line="386" column="0" selection-start="6694" selection-end="6694" vertical-scroll-proportion="0.33039647" vertical-offset="6873" max-vertical-offset="16866" />
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1189" column="7" selection-start="17990" selection-end="17990" vertical-scroll-proportion="0.33280253" vertical-offset="21193" max-vertical-offset="68634" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/estilo_x.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="1" selection-start="888" selection-end="888" vertical-scroll-proportion="0.91401273" vertical-offset="236" max-vertical-offset="918" />
@@ -722,37 +694,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="36" selection-start="1185" selection-end="1185" vertical-scroll-proportion="0.0" vertical-offset="335" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populador.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="23" selection-start="1805" selection-end="1805" vertical-scroll-proportion="0.0" vertical-offset="758" max-vertical-offset="1386">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tela.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="50" selection-start="943" selection-end="985" vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="2088">
+        <state line="68" column="0" selection-start="2025" selection-end="2025" vertical-scroll-proportion="0.02866242" vertical-offset="1206" max-vertical-offset="2088" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="19" selection-start="49" selection-end="49" vertical-scroll-proportion="-1.3333334" vertical-offset="18" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/utils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2520">
+        <state line="93" column="25" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0" vertical-offset="1494" max-vertical-offset="2286">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populador.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="0" selection-start="1916" selection-end="1916" vertical-scroll-proportion="0.0" vertical-offset="794" max-vertical-offset="1422">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1189" column="7" selection-start="17990" selection-end="17990" vertical-scroll-proportion="0.33280253" vertical-offset="21193" max-vertical-offset="68634">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/quadradinhos.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="123" selection-end="123" vertical-scroll-proportion="0.22929937" vertical-offset="0" max-vertical-offset="1620">
+        <state line="65" column="5" selection-start="2148" selection-end="2148" vertical-scroll-proportion="0.2834395" vertical-offset="992" max-vertical-offset="1620">
           <folding />
         </state>
       </provider>
