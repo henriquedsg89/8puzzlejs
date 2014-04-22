@@ -73,6 +73,8 @@ function ordenar() {
     console.log("Done");
     filaEstados = null;
 
+    alert("Resolvido! A partir de agora sera exibido a sequencia de movimentos.");
+
     iniciaBoxes();
     intervalId = setInterval(desenha, 50);
 }
