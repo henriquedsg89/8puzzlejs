@@ -55,7 +55,7 @@ function ordenar() {
             }
         });
 
-        if(filaEstados.length % 1000 == 0) {
+        if(filaEstados.length % 10000 == 0) {
             console.log("Tamanho da fila = " + filaEstados.length + ", num de estados gerados " + numEstadosGerados);
         }
 

@@ -44,7 +44,7 @@ function findPosicaoDoZeroParaBoxes(boxes) {
 function ehRepetido(est) {
     var anterior = est.deOndeVim;
     while (anterior != null) {
-        if (equals(anterior.img.clone(), est.img.clone())) {
+        if (equals(anterior.img, est.img)) {
             return true;
         }
         anterior = anterior.deOndeVim;
@@ -64,22 +64,22 @@ function equals(img1, img2) {
 
 function calculaManhattan(img) {
     var manhattan = 0;
-    var valor;
+    var valor, ii, jj, man1, man2;
 
-    var arrayPosition;
 
     for (var i = 0; i < 3; i++) {
         for (var j = 0; j < 3; j++) {
             valor = img[i][j];
             if (valor != 0) {
-                valor -= 1;
-                manhattan += Math.abs((i - Math.floor(valor / 3)) + (j - valor % 3));
+                ii = Math.floor((valor-1) / 2);
+                jj = (valor-1) % 3;
+                man1 = Math.abs(i-ii) + Math.abs(j-jj);
 
-                arrayPosition = 1+ j +(i*3);
+                ii = Math.floor(valor / 2);
+                jj = valor % 3;
+                man2 = Math.abs(i-ii) + Math.abs(j-jj);
 
-                var ii = Math.floor((valor-1) / 2);
-                var jj = (valor-1) % 3;
-                manhattan +=  (Math.abs(i-ii) + Math.abs(j-jj));
+                manhattan += man1 < man2 ? man1 : man2;
 //                  0 1 2
 //                  0 x x x
 //                  1 x x x
